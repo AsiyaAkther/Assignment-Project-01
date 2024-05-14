@@ -1,0 +1,809 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+    color: #000000;
+}
+
+/* Common codes start */
+.container{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+a{
+    color: #000000;
+}
+.primary-btn{
+    text-decoration: none;
+    padding: 11px 28px;
+    font-size: 22px;
+    border-radius: 30px;
+}
+.btn-bg-white{
+    background-color: #F1F1F1;
+}
+.btn-bg-black{
+    background-color: #000000;
+    color: #fff;
+}
+h2{
+    font-size: 34px;
+    font-weight: 500;
+}
+/* Common codes end */
+
+/* Nav codes start */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 105px;
+    padding: 0 50px;
+
+
+
+    .nav-links{
+        float: left;
+
+        & li{
+            list-style-type: none;
+            padding: 10px;
+            font-size: 22px;
+            display: inline;
+            font-weight: 500;
+
+            & a{
+                text-decoration: none;
+            }
+        }
+    }
+
+    .nav-buttons{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .world-icon{
+            width: 36px;
+            height: 36px;
+            & img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+/* Nav codes end */
+
+/* Hero codes start */
+.hero{
+    background-image: url("../images/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0 40px 0;
+    text-align: center;
+
+    .hero-offer-block{
+        background-color: #fff;
+        padding: 44px 98px;
+        max-width: 700px;
+        margin: 0 auto;
+        border-radius: 10px;
+
+        & h1{
+            font-size: 45px;
+            font-weight: 500;
+        }
+
+        .offer-content-block{
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 18px;
+            width: 100%;
+
+            & select{
+                border: none;
+                background-color: #ECECEC;
+                border-radius: 8px;
+                padding: 9px 20px;
+                width: 100%;
+                appearance: none;
+                background-image: url("../images/select-arrow.png");
+                background-repeat: no-repeat;
+                background-position: right 0.7rem top 50%;
+                background-size: 10px auto;
+
+                & option{
+                    font-size: 22px;
+                    font-weight: medium;
+                }
+            }
+        }
+
+        .offer-buttons-block{
+            margin-top: 24px;
+            width: 100%;
+            display: flex;
+            gap: 12px;
+            justify-content: space-between;
+
+            .how-much-btn{
+                padding: 11px 115px;
+                border: none;
+                outline: none;
+                border-radius: 30px;
+                background: #ECECEC;
+                font-size: 22px;
+                font-weight: 500;
+            }
+            .find-offer-btn{
+                border: none;
+                outline: none;
+                background: #00EBC7;
+                padding: 11px 28px;
+                border-radius: 30px;
+                font-size: 22px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .hero-btn-block{
+        margin-top: 60px;
+
+        & a{
+            padding: 11px 28px;
+            font-size: 22px;
+            border-radius: 30px;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+    }
+}
+/* Hero codes end */
+
+/* Bitcoin section codes start */
+.bitcoin{
+    background-color: #FDE24F;
+
+    .bitcoin-content-wrapper{
+        padding: 80px 146px;
+
+        & h2{
+            text-align: center;
+        }
+        .bitcoin-logos{
+            margin-top: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+/* Bitcoin section codes end */
+
+/* Feature codes start */
+.feature{
+    padding: 52px 65px;
+
+    .feature-cards{
+        margin: 89px 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+
+        .feature-card{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            gap: 32px;
+
+            & div{
+                & img{
+                    margin-bottom: 15px;
+                    width: 80px;
+                    height: 80px;
+                }
+                & h3{
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+            }
+
+            & p{
+                font-size: 20px;
+                color: #535353;
+            }
+            & a{
+                font-size: 16px;
+                color: #161616;
+            }
+        }
+
+        .line{
+            width: 120px;
+            height: 1px;
+            background-color: #535353;
+            margin-top: 115px;
+        }
+    }
+
+    .feature-btn-block{
+        text-align: center;
+
+        .strock-btn{
+            border: 1px solid #000000;
+        }
+    }
+
+}
+/* Feature codes end */
+
+/* Buy/sell section codes start */
+.buy-sell{
+    background-color: #f8f8f8;
+    border-top: 1px solid rgba(0,0,0,0.6);
+    border-bottom: 1px solid rgba(0,0,0,0.6);
+
+    .buy-sell-content-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        .buy-side-content{
+            border-right: 1px solid rgba(0,0,0,0.6);
+            padding: 40px 30px;
+        }
+        .sell-side-content{
+            padding: 40px 30px;
+        }
+
+        .buy-blocks{
+            margin-top: 24px;
+
+            .buy-single-block{
+                width: 100%;
+                padding: 13px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #fff;
+                border: 1px solid rgba(0,0,0,0.6);
+                border-radius: 15px;
+                margin-bottom: 34px;
+
+                & img{
+                    width: 60px;
+                    height: 60px;
+                }
+
+                & div{
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+            .buy-single-block:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+/* Buy/sell section codes end */
+
+/* CTA codes start */
+.cta{
+    padding: 150px 70px 50px 70px;
+    background-color: #CFBAFF;
+    text-align: center;
+
+    & p{
+        font-size: 75px;
+        font-weight: 500;
+        margin-bottom: 70px;
+    }
+}
+/* CTA codes end */
+
+/* Footer codes start */
+.footer{
+    background-color: #000;
+    color: #fff;
+
+    .footer-content-wrapper{
+        padding: 54px 64px 25px 64px;
+        display: grid;
+        grid-gap: 120px;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+
+        & img{
+            max-width: 137px;
+        }
+        & div h4{
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        & ul li{
+            list-style-type: none;
+            margin-bottom: 13px;
+
+            & a{
+                color: #fff;
+                text-decoration: none;
+                font-size: 20px;
+            }
+        }
+        & ul li:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    .line{
+        background-color: rgba(255,255,255,0.6);
+        width: 100%;
+        height: 1px;
+    }
+
+    .footer-bottom-text{
+        padding: 25px 64px 20px 64px;
+
+        & p{
+            font-size: 13px;
+            font-weight: 500;
+            text-align: center;
+        }
+    }
+}
+/* Footer codes end */
+
+
+
+/* ======= small device responsive styles start ======= */
+@media only screen and (max-width: 600px){
+    .primary-btn{
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    .navbar{
+        height: 60px;
+        padding: 0 16px;
+        gap: 8px;
+
+        .logo{
+            max-width: 90px;
+        }
+
+        .nav-links{
+            display: none;
+        }
+
+        .nav-buttons{
+            gap: 8px;
+
+            .world-icon{
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+
+    .hero{
+        padding: 40px 16px;
+
+        .hero-offer-block{
+            padding: 30px 20px;
+
+            & h1{
+                font-size: 32px;
+            }
+
+            .offer-content-block{
+                margin-top: 20px;
+                flex-direction: column;
+                gap: 10px;
+
+                & select{
+                    padding: 15px 20px;
+
+                    & option{
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .offer-buttons-block{
+                gap: 10px;
+
+                .how-much-btn{
+                    padding: 11px 28px;
+                    font-size: 16px;
+                }
+                .find-offer-btn{
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .hero-btn-block{
+            margin-top: 40px;
+
+            & a{
+                font-size: 16px;
+            }
+        }
+    }
+
+    .bitcoin{
+        background-color: #FDE24F;
+
+        .bitcoin-content-wrapper{
+            padding: 40px 16px;
+
+            .bitcoin-logos{
+                margin-top: 32px;
+
+                & img{
+                    width: 40px;
+                }
+            }
+        }
+    }
+
+    .feature{
+        padding: 40px 16px;
+
+        .feature-cards{
+            margin: 40px 0;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+
+
+            .line{
+                display: none;
+            }
+        }
+    }
+
+    .buy-sell{
+
+        .buy-sell-content-wrapper{
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+
+            .buy-side-content{
+                border-right: none;
+                border-bottom: 1px solid rgba(0,0,0,0.6);
+                padding: 30px 16px;
+            }
+            .sell-side-content{
+                padding: 30px 16px;
+            }
+            .buy-blocks{
+
+                .buy-single-block{
+                    padding: 8px 14px;
+                    margin-bottom: 20px;
+
+                    & img{
+                        width: 40px;
+                        height: 40px;
+                    }
+
+                    & div{
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+
+    .cta{
+        padding: 60px 16px;
+
+        & p{
+            font-size: 38px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .footer{
+
+        .footer-content-wrapper{
+            padding: 40px 16px 25px 16px;
+            grid-gap: 40px;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+
+        .footer-bottom-text{
+            padding: 25px 16px 40px 16px;
+        }
+    }
+}
+/* ======= small device responsive styles end ======= */
+
+/* ======= medium device responsive styles start ======= */
+@media (min-width: 601px) and (max-width: 767px){
+    .navbar{
+        height: 105px;
+        padding: 0 20px;
+
+        .nav-links{
+            display: none;
+        }
+    }
+
+    .hero{
+        padding: 40px 16px;
+
+        .hero-offer-block{
+            padding: 30px 20px;
+
+            .offer-content-block{
+                flex-direction: column;
+            }
+
+            .offer-buttons-block{
+
+                .how-much-btn{
+                    padding: 11px 28px;
+                }
+            }
+        }
+
+        .hero-btn-block{
+            margin-top: 40px;
+
+            & a{
+                font-size: 16px;
+            }
+        }
+    }
+
+    .bitcoin{
+        background-color: #FDE24F;
+
+        .bitcoin-content-wrapper{
+            padding: 60px 20px;
+
+            .bitcoin-logos{
+
+                & img{
+                    width: 80px;
+                }
+            }
+        }
+    }
+
+    .feature{
+        padding: 40px 20px;
+
+        .feature-cards{
+            margin: 40px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 32px 16px;
+
+
+            .line{
+                display: none;
+            }
+        }
+
+    }
+
+    .buy-sell{
+
+        .buy-sell-content-wrapper{
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+
+            .buy-side-content{
+                border-right: none;
+                border-bottom: 1px solid rgba(0,0,0,0.6);
+                padding: 40px 20px;
+            }
+            .sell-side-content{
+                padding: 40px 20px;
+            }
+        }
+    }
+
+    .cta{
+        padding: 60px 20px;
+
+        & p{
+            font-size: 64px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .footer{
+
+        .footer-content-wrapper{
+            padding: 40px 20px 25px 20px;
+            grid-gap: 40px;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+
+        .footer-bottom-text{
+            padding: 25px 20px 40px 20px;
+        }
+    }
+}
+
+/* ======= meidum device responsive styles end ======= */
+
+/* ======= Tab responsive styles start ======= */
+@media (min-width: 768px) and (max-width: 991px){
+    .primary-btn{
+        padding: 11px 24px;
+        font-size: 18px;
+    }
+    .navbar{
+        height: 105px;
+        padding: 0 20px;
+
+        .nav-links{
+            & li{
+                padding: 5px;
+                font-size: 16px;
+            }
+        }
+
+        .nav-buttons{
+            gap: 8px;
+
+            .world-icon{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    .bitcoin{
+        background-color: #FDE24F;
+
+        .bitcoin-content-wrapper{
+            padding: 60px 20px;
+
+            .bitcoin-logos{
+
+                & img{
+                    width: 80px;
+                }
+            }
+        }
+    }
+
+    .feature{
+        padding: 40px 20px;
+
+        .feature-cards{
+            margin: 40px 0;
+            gap: 32px 16px;
+
+            .feature-card{
+                & div{
+                    & img{
+                        width: 50px;
+                        height: 50px;
+                    }
+                    & h3{
+                        font-size: 18px;
+                    }
+                }
+
+                & p{
+                    font-size: 16px;
+                }
+                & a{
+                    font-size: 14px;
+                }
+            }
+            .line{
+                display: none;
+            }
+        }
+
+    }
+
+    .buy-sell{
+
+        .buy-sell-content-wrapper{
+
+            .buy-side-content{
+                padding: 40px 20px;
+            }
+            .sell-side-content{
+                padding: 40px 20px;
+            }
+
+            .buy-blocks{
+
+                .buy-single-block{
+                    padding: 13px;
+
+                    & img{
+                        width: 40px;
+                        height: 40px;
+                    }
+
+                    & div{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .cta{
+        padding: 80px 20px;
+    }
+
+    .footer{
+
+        .footer-content-wrapper{
+            padding: 40px 20px 25px 20px;
+            grid-gap: 40px;
+
+            & img{
+                max-width: 100px;
+            }
+
+            & div {
+                & h4{
+                    font-size: 20px;
+                }
+                & ul li a{
+                    font-size: 16px;
+                }
+
+            }
+        }
+
+        .footer-bottom-text{
+            padding: 20px 16px 20px 16px;
+        }
+    }
+}
+/* ======= Tab responsive styles end ======= */
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .buy-sell{
+        .buy-sell-content-wrapper{
+            .buy-blocks{
+                .buy-single-block{
+                    & img{
+                        width: 60px;
+                        height: 60px;
+                    }
+                    & div{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer{
+
+        .footer-content-wrapper{
+            grid-gap: 40px;
+        }
+    }
+}
