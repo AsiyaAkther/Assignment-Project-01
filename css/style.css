@@ -537,7 +537,7 @@ h2{
 /* ======= small device responsive styles end ======= */
 
 /* ======= medium device responsive styles start ======= */
-@media (min-width: 601px) and (max-width: 768px){
+@media (min-width: 601px) and (max-width: 769px){
     .navbar{
         height: 105px;
         padding: 0 20px;
