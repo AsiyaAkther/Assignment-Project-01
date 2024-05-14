@@ -465,7 +465,9 @@ h2{
 
     .feature{
         padding: 40px 16px;
-
+        & h2{
+            text-align: center;
+        }
         .feature-cards{
             margin: 40px 0;
             flex-direction: column;
@@ -692,7 +694,9 @@ h2{
 
     .feature{
         padding: 40px 20px;
-
+        & h2{
+            text-align: center;
+        }
         .feature-cards{
             margin: 40px 0;
             gap: 32px 16px;
