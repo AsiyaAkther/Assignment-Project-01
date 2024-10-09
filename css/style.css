@@ -38,6 +38,22 @@ h2{
     font-size: 34px;
     font-weight: 500;
 }
+.get-start-btn:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+.get-start-btn{
+    transition: all 0.5s;
+    border: 1px solid transparent;
+}
+.strock-btn{
+    transition: all 0.5s;
+}
+.strock-btn:hover{
+    background-color: #000;
+    color: white;
+}
 /* Common codes end */
 
 /* Nav codes start */
@@ -62,6 +78,11 @@ h2{
 
             & a{
                 text-decoration: none;
+                transition: color 0.5s;
+            }
+
+            & a:hover{
+                color: #027967;
             }
         }
     }
@@ -70,6 +91,15 @@ h2{
         display: flex;
         align-items: center;
         gap: 15px;
+
+
+        .log-in-btn{
+            transition: background-color 0.5s;
+        }
+
+        .log-in-btn:hover{
+            background-color: #cac8c8;
+        }
 
         .world-icon{
             width: 36px;
@@ -125,7 +155,7 @@ h2{
                 background-size: 10px auto;
 
                 & option{
-                    font-size: 22px;
+                    font-size: 18px;
                     font-weight: medium;
                 }
             }
@@ -146,7 +176,14 @@ h2{
                 background: #ECECEC;
                 font-size: 22px;
                 font-weight: 500;
+                transition: background-color 0.5s;
+                cursor: pointer;
             }
+
+            .how-much-btn:hover{
+                background: #cac8c8;
+            }
+
             .find-offer-btn{
                 border: none;
                 outline: none;
@@ -155,6 +192,12 @@ h2{
                 border-radius: 30px;
                 font-size: 22px;
                 font-weight: 600;
+                transition: background-color 0.5s;
+                cursor: pointer;
+            }
+
+            .find-offer-btn:hover{
+                background: #07a78f;
             }
         }
     }
@@ -342,6 +385,11 @@ h2{
                 color: #fff;
                 text-decoration: none;
                 font-size: 20px;
+                transition: color 0.5s;
+            }
+
+            & a:hover{
+                color: #027967;
             }
         }
         & ul li:last-child{
